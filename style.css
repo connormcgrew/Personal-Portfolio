@@ -29,6 +29,12 @@ ul {
     padding: 0;
 }
 
+h1 {
+    color: var(--blackcolor);
+    text-align: center;
+    line-height: 1.2;
+}
+
 /* nav bar styling */
 nav {
     height: 100px;
@@ -104,47 +110,39 @@ nav {
     padding: 50px;
 }
 
-.about-me {
+.aboutme {
     font-size: 36px;
     margin: 0;
     text-align: center;
+    color: var(--blackcolor);
 }
+
 
 /* tech stack styling */
-#techstack {
-    padding: 50px;
-}
-
-.tech {
-    display: inline-block;
-    margin-right: 20px;
-    width: 100px;
-    height: 100px;
-}
 .logo-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+  }
+  
+  .tech {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.techimg {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    object-fit: contain;
-}
-
-/* .techimg-javascript{
-    width: 100px;
-    height: 100px;
-} */
-
-.techname {
-    display: block;
-    text-align: center;
+    margin: 20px;
+    width: 250px;  
+  }
+  
+  .tech img {
+    width: 400px; 
+    height: auto;
+  }
+  
+  .techname {
+    font-size: 1.5rem;
+    font-weight: bold;
     margin-top: 10px;
-    font-size: 18px;
-}
+  }
 
 /* project board styling */
 #projects {
@@ -200,3 +198,39 @@ nav {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+/* Styles for iPad  */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .techimg {
+    width: 150px;
+  }
+  .techname {
+    font-size: 24px;
+  }
+  body {
+    background-color: #6f23b1;
+  }
+}
+
+/* Styles for iPhone  */
+@media screen and (max-width: 767px) {
+  .techimg {
+    width: 80px;
+  }
+  .techname {
+    font-size: 16px;
+  }
+  body {
+    background-color: #374d5e;
+  }
+}
+
+/* Styles for desktop  */
+@media screen and (min-width: 1025px) {
+    .techimg {
+      width: 200px;
+    }
+    .techname {
+      font-size: 28px;
+    }
+  }
