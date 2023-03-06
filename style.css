@@ -1,3 +1,8 @@
+:root {
+    --blackcolor: #000;
+    --whitecolor: #fff; 
+    --navyblue: #000080;
+}
 @import url("");
 * {
     font-family:'Courier New', Courier, monospace;
@@ -25,34 +30,49 @@ ul {
 }
 
 /* nav bar styling */
-#navbar {
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
-
 nav {
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    padding: 0 12px;
+  }
+  .navlist {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .contact {
+    margin-left: auto;
+  }
 
-nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 18px;
-}
-
-nav ul li.contact a {
-    background-color: navy;
-    border-radius: 5px;
-    padding: 10px;
-}
-
+  .navlink {
+    margin: 0 12px;
+    color: var(--blackcolor);
+    font-weight: 700;
+  }
+  .navlink a {
+    color: var(--blackcolor);
+    font-weight: bold;
+  }
+  
+  
+  .myname {
+    font-size: 24px;
+    color: var(--whitecolor);
+    margin: 0 12px;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: var(--blackcolor);
+    border-spacing: 10px;
+    border: var(--whitecolor);
+    border-width: 10px;
+    padding: 8px 20px;
+  }
 /* about me styling */
 .pfp-container {
     display: flex;
@@ -79,8 +99,8 @@ nav ul li.contact a {
     padding-top: 8px;
   }
 #aboutme {
-    background-color: navy;
-    color: white;
+    background-color: var(--navyblue);
+    color: var(--whitecolor);
     padding: 50px;
 }
 
@@ -98,12 +118,26 @@ nav ul li.contact a {
 .tech {
     display: inline-block;
     margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .techimg {
     width: 100px;
     height: 100px;
+    margin: 10px;
+    object-fit: contain;
 }
+
+/* .techimg-javascript{
+    width: 100px;
+    height: 100px;
+} */
 
 .techname {
     display: block;
@@ -159,8 +193,8 @@ nav ul li.contact a {
 
 .links a {
     display: inline-block;
-    background-color: navy;
-    color: white;
+    background-color: var(--navyblue);
+    color: var(--whitecolor);
     padding: 10px 20px;
     border-radius: 5px;
     margin-right: 10px;
