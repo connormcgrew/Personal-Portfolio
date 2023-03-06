@@ -54,6 +54,30 @@ nav ul li.contact a {
 }
 
 /* about me styling */
+.pfp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .pfp-mask {
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px #286da1;
+    margin-bottom: 28px;
+  }
+.pfp-image {
+    width: 100%;
+  
+    /* fitting picture to website */
+    transform: scale(1) translateY(-120px);
+    padding-top: 8px;
+  }
 #aboutme {
     background-color: navy;
     color: white;
