@@ -108,10 +108,11 @@ nav {
     background-color: var(--navyblue);
     color: var(--whitecolor);
     padding: 50px;
+    
 }
 
 .aboutme {
-    font-size: 36px;
+    font-size: 24px;
     margin: 0;
     text-align: center;
     color: var(--blackcolor);
@@ -134,7 +135,7 @@ nav {
   }
   
   .tech img {
-    width: 400px; 
+    width: 200px; 
     height: auto;
   }
   
@@ -157,11 +158,11 @@ nav {
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .title {
-    font-size: 36px;
+    font-size: 24px;
     margin: 0 0 50px 0;
 }
 
